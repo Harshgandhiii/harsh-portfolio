@@ -4,12 +4,11 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import Link from "next/link";
 import { FadeIn } from "@/components/animations/fade-in";
-import { m } from "framer-motion";
+import { m, motion } from "framer-motion";
 import { BackgroundBeamsWithCollision } from "./animations/background-beams";
 import { TextGenerateEffect } from "./animations/text-generate-effect";
 
 export function HeroSection() {
-
   return (
     <BackgroundBeamsWithCollision>
       <section className="relative py-20 md:py-32 flex items-center min-h-[calc(100vh-4rem)]">
@@ -33,38 +32,48 @@ export function HeroSection() {
 
             <FadeIn delay={0.4}>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button
-                  size="lg"
-                  asChild
-                  className="relative overflow-hidden group"
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
                 >
-                  <Link href="#projects">
-                    <span className="relative z-10">View My Work</span>
-                    <m.span
-                      className="absolute inset-0 bg-primary/80"
-                      initial={{ x: "-100%" }}
-                      whileHover={{ x: 0 }}
-                      transition={{ duration: 0.3 }}
-                    />
-                  </Link>
-                </Button>
+                  <Button
+                    size="lg"
+                    asChild
+                    className="relative overflow-hidden group"
+                  >
+                    <Link href="#projects">
+                      <span className="relative z-10">View My Work</span>
+                      <m.span
+                        className="absolute inset-0 bg-primary/80"
+                        initial={{ x: "-100%" }}
+                        whileHover={{ x: 0 }}
+                        transition={{ duration: 0.3 }}
+                      />
+                    </Link>
+                  </Button>
+                </motion.div>
 
-                <Button
-                  size="lg"
-                  variant="outline"
-                  asChild
-                  className="relative overflow-hidden group border-primary"
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
                 >
-                  <Link href="#contact">
-                    <span className="relative z-10">Contact Me</span>
-                    <m.span
-                      className="absolute inset-0 bg-muted"
-                      initial={{ x: "-100%" }}
-                      whileHover={{ x: 0 }}
-                      transition={{ duration: 0.3 }}
-                    />
-                  </Link>
-                </Button>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    asChild
+                    className="relative overflow-hidden group border-primary"
+                  >
+                    <Link href="#contact">
+                      <span className="relative z-10">Contact Me</span>
+                      <m.span
+                        className="absolute inset-0 bg-muted"
+                        initial={{ x: "-100%" }}
+                        whileHover={{ x: 0 }}
+                        transition={{ duration: 0.3 }}
+                      />
+                    </Link>
+                  </Button>
+                </motion.div>
               </div>
             </FadeIn>
           </div>
