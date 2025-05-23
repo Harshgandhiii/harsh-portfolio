@@ -1,0 +1,12 @@
+[[plugins]]
+package = "@netlify/plugin-nextjs"
+
+[build]
+publish = ".next"
+command = "yarn build && yarn start"
+
+[functions]
+included_files = ["src/content/**"]
+
+[build.environment]
+NODE_VERSION = "18"
