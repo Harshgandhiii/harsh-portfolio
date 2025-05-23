@@ -1,13 +1,12 @@
-# Developer Portfolio Website
+# Personal Portfolio Website
 
-A modern, responsive developer portfolio website built with Next.js, Tailwind CSS, and Framer Motion. This portfolio features a 3D hero section, smooth animations, and multiple color themes.
+A modern, responsive developer portfolio website built with Next.js, Tailwind CSS, and Framer Motion. This portfolio features a hero section, smooth animations, and multiple color themes.
 
-![Portfolio Preview](/harsh-portfolio.png?height=400&width=800)
+![Portfolio Preview](/public/harsh-portfolio.png?height=400&width=800)
 
 ## Features
 
 - **Responsive Design**: Looks great on all devices from mobile to desktop
-- **3D Hero Section**: Eye-catching 3D elements using React Three Fiber
 - **Smooth Animations**: Page transitions and scroll animations using Framer Motion
 - **Multiple Color Themes**: Two distinct color schemes to choose from
 - **Modular Components**: Easy to customize and extend
@@ -35,5 +34,5 @@ A modern, responsive developer portfolio website built with Next.js, Tailwind CS
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/developer-portfolio.git
-   cd developer-portfolio
+   git clone https://github.com/Harshgandhiii/harsh-portfolio.git
+   cd harsh-portfolio
