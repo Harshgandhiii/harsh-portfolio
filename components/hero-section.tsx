@@ -24,10 +24,11 @@ export function HeroSection() {
             </FadeIn>
 
             <FadeIn delay={0.2}>
-              <p className="text-xl md:text-2xl text-muted-foreground">
-                A passionate front-end developer crafting beautiful and
-                functional web experiences
-              </p>
+              <TextGenerateEffect
+                words="A passionate front-end developer crafting beautiful and
+                functional web experiences"
+                className="text-xl md:text-2xl text-muted-foreground"
+              />
             </FadeIn>
 
             <FadeIn delay={0.4}>
