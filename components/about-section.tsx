@@ -22,7 +22,7 @@ export function AboutSection() {
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
               >
-                <Image src="/placeholder.svg?height=320&width=320" alt="Your Name" fill className="object-cover" />
+                <Image src="/me.png" alt="Harsh Gandhi" fill className="object-cover " />
               </m.div>
             </div>
           </FadeIn>
@@ -45,9 +45,11 @@ export function AboutSection() {
             <FadeIn direction="left" delay={0.6}>
               <div className="pt-4">
                 <m.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button variant="outline" className="gap-2 border-primary">
-                    <FileText className="h-4 w-4" />
-                    Download Resume
+                  <Button asChild variant="outline" className="gap-2 border-primary">
+                    <a href="/Harsh_Gandhi_Resume.docx" download>
+                      <FileText className="h-4 w-4" />
+                      Download Resume
+                    </a>
                   </Button>
                 </m.div>
               </div>

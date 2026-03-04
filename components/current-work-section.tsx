@@ -23,15 +23,16 @@ export function CurrentWorkSection() {
                 <div className="grid md:grid-cols-2">
                   <div className="relative h-64 md:h-full">
                     <m.div
-                      className="absolute inset-0"
+                      className="absolute inset-0 flex items-center justify-center"
                       whileHover={{ scale: 1.05 }}
                       transition={{ duration: 0.3 }}
                     >
                       <Image
-                        src="/placeholder.svg?height=400&width=600"
+                        src="/sf.ico"
                         alt="Company Building"
-                        fill
-                        className="object-cover"
+                        width={60}
+                        height={60}
+                        className="object-contain"
                       />
                     </m.div>
                   </div>
@@ -54,7 +55,7 @@ export function CurrentWorkSection() {
                         Seaflux Technologies
                       </h3>
                       <p className="text-lg font-medium text-primary">
-                        Junior Software Engineer
+                        Software Engineer
                       </p>
                     </div>
 
