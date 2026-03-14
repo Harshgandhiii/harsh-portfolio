@@ -15,6 +15,7 @@ export const BackgroundBeamsWithCollision = ({
 
   const beams = [
     {
+      id: 1,
       initialX: 10,
       translateX: 10,
       duration: 7,
@@ -22,6 +23,8 @@ export const BackgroundBeamsWithCollision = ({
       delay: 2,
     },
     {
+      id: 2,
+
       initialX: 600,
       translateX: 600,
       duration: 3,
@@ -29,6 +32,7 @@ export const BackgroundBeamsWithCollision = ({
       delay: 4,
     },
     {
+      id: 3,
       initialX: 100,
       translateX: 100,
       duration: 7,
@@ -36,6 +40,7 @@ export const BackgroundBeamsWithCollision = ({
       className: "h-6",
     },
     {
+      id: 4,
       initialX: 400,
       translateX: 400,
       duration: 5,
@@ -43,6 +48,7 @@ export const BackgroundBeamsWithCollision = ({
       delay: 4,
     },
     {
+      id: 5,
       initialX: 800,
       translateX: 800,
       duration: 11,
@@ -50,6 +56,7 @@ export const BackgroundBeamsWithCollision = ({
       className: "h-20",
     },
     {
+      id: 6,
       initialX: 1000,
       translateX: 1000,
       duration: 4,
@@ -57,6 +64,7 @@ export const BackgroundBeamsWithCollision = ({
       className: "h-12",
     },
     {
+      id: 7,
       initialX: 1800,
       translateX: 1800,
       duration: 6,
@@ -65,6 +73,7 @@ export const BackgroundBeamsWithCollision = ({
       className: "h-6",
     },
     {
+      id: 8,
       initialX: 10,
       translateX: 10,
       duration: 7,
@@ -72,6 +81,7 @@ export const BackgroundBeamsWithCollision = ({
       delay: 2,
     },
     {
+      id: 9,
       initialX: 600,
       translateX: 600,
       duration: 3,
@@ -79,6 +89,7 @@ export const BackgroundBeamsWithCollision = ({
       delay: 4,
     },
     {
+      id: 10,
       initialX: 100,
       translateX: 100,
       duration: 7,
@@ -86,6 +97,7 @@ export const BackgroundBeamsWithCollision = ({
       className: "h-6",
     },
     {
+      id: 11,
       initialX: 400,
       translateX: 400,
       duration: 5,
@@ -93,6 +105,7 @@ export const BackgroundBeamsWithCollision = ({
       delay: 4,
     },
     {
+      id: 12,
       initialX: 800,
       translateX: 800,
       duration: 11,
@@ -100,6 +113,7 @@ export const BackgroundBeamsWithCollision = ({
       className: "h-20",
     },
     {
+      id: 13,
       initialX: 1000,
       translateX: 1000,
       duration: 4,
@@ -107,6 +121,7 @@ export const BackgroundBeamsWithCollision = ({
       className: "h-12",
     },
     {
+      id: 14,
       initialX: 1800,
       translateX: 1800,
       duration: 6,
@@ -127,7 +142,7 @@ export const BackgroundBeamsWithCollision = ({
     >
       {beams.map((beam) => (
         <CollisionMechanism
-          key={beam.initialX + "beam-idx"}
+          key={beam.id + "beam-idx"}
           beamOptions={beam}
           containerRef={containerRef}
           parentRef={parentRef}
