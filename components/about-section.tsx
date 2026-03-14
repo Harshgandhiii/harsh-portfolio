@@ -22,7 +22,7 @@ export function AboutSection() {
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
               >
-                <Image src="/me.png" alt="Harsh Gandhi" fill className="object-cover " />
+                <Image src="/me.webp" alt="Harsh Gandhi" fill className="object-cover " />
               </m.div>
             </div>
           </FadeIn>
