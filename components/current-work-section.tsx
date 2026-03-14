@@ -18,7 +18,7 @@ export function CurrentWorkSection() {
 
         <div className="max-w-4xl mx-auto">
           <FadeIn>
-            <Card className="overflow-hidden bg-blue-50">
+            <Card className="overflow-hidden bg-emerald-50">
               <CardContent className="p-0">
                 <div className="grid md:grid-cols-2">
                   <div className="relative h-64 md:h-full">

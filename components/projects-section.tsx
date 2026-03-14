@@ -22,7 +22,7 @@ export function ProjectsSection() {
       description:
         "Built a secure and scalable platform that enables users to connect their exchanges and trade cryptocurrencies seamlessly. Supports spot and futures trading along with automated trading bots for strategy execution. Integrated real-time market data, analytics, and risk management features to enhance the trading experience.",
       image: "/crypto-trading.webp?height=400&width=600",
-      tags: ["React", "PayPal", "Tailwind CSS", "TypeScript", "Shadcn UI"],
+      tags: ["React", "PayPal", "Tailwind CSS", "TypeScript", "Shadcn UI", "Trading View"],
       liveUrl: "#",
       githubUrl: "#",
     },
@@ -31,15 +31,15 @@ export function ProjectsSection() {
       description:
         "Developed a user-friendly platform where audiences can explore events, view details, and access passes, packages, and announcements. Event management, including registrations and content updates, is handled through a separate admin panel, ensuring a seamless experience for both users and organizers.",
       image: "/event.webp?height=400&width=600",
-      tags: ["Next.js", "Tailwind CSS", "Stripe", "Shadcn UI"],
+      tags: ["Next.js", "Tailwind CSS", "Stripe", "Shadcn UI", "React"],
       liveUrl: "#",
       githubUrl: "#",
     },
     {
       title: "Enterprise Procurement & Tender Management Platform",
       description:
-        "Developed a procurement platform enabling organizations to publish product tenders and suppliers to submit competitive bids. The system supports bid evaluation, winner selection, contract generation, and milestone-based claims. Payments are processed after claim approval, followed by tender closure and mutual rating between organizations and suppliers to ensure transparency and accountability.",
-      image: "/placeholder.svg?height=400&width=600",
+        "Developed a procurement platform where organizations publish tenders and suppliers submit bids. Implemented bid evaluation, winner selection, contract generation, and milestone-based claims. Payments are processed after claim approval, followed by tender closure and mutual ratings to ensure transparency and accountability.",
+      image: "/procurement.png?height=400&width=600",
       tags: [
         "Next.js",
         "Tailwind CSS",
@@ -48,6 +48,21 @@ export function ProjectsSection() {
         "Node JS",
         "Express",
         "PostgreSQL",
+      ],
+      liveUrl: "#",
+      githubUrl: "#",
+    },
+    {
+      title: "Real Estate Marketplace Platform",
+      description:
+        "Developed a scalable real estate platform for property discovery and management with listings, search, filtering, and dashboards. Contributed to migrating the platform from Angular to Next.js, improving performance and maintainability. The platform supports 1000+ daily users with a responsive, high-performance experience.",
+      image: "/real-estate.png?height=400&width=600",
+      tags: [
+        "Next.js",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "Framer Motion",
+        "Redux"
       ],
       liveUrl: "#",
       githubUrl: "#",
@@ -63,13 +78,13 @@ export function ProjectsSection() {
           </h2>
         </FadeIn>
 
-        <StaggerChildren className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <StaggerChildren className="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
           {projects.map((project, index) => (
             <StaggerItem key={index}>
               <m.div whileHover={{ y: -10 }} transition={{ duration: 0.3 }}>
-                <Card className="overflow-hidden flex flex-col h-full">
+                <Card className="overflow-hidden flex flex-col h-full min-h-[575px]">
                   <m.div
-                    className="relative h-48 w-full"
+                    className="relative h-60 w-full"
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
                   >
@@ -81,7 +96,7 @@ export function ProjectsSection() {
                     />
                   </m.div>
                   <CardHeader>
-                    <CardTitle>{project.title}</CardTitle>
+                    <CardTitle className="leading-relaxed">{project.title}</CardTitle>
                     <CardDescription>{project.description}</CardDescription>
                   </CardHeader>
                   <CardContent className="flex-grow">

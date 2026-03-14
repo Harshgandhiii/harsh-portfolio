@@ -21,7 +21,7 @@ export function Footer() {
               <m.div key={item} whileHover={{ y: -2 }} transition={{ duration: 0.2 }}>
                 <Link
                   href={`#${item.toLowerCase()}`}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   {item}
                 </Link>
@@ -48,7 +48,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.label}
-                className="text-muted-foreground hover:text-foreground transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors"
                 whileHover={{ y: -4, scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ duration: 0.2 }}

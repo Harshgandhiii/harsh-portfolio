@@ -7,7 +7,7 @@ import { FramerMotionProvider } from "@/components/framer-motion-provider"
 const inter = Outfit({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Harsh Gandhi - Developer Portfolio",
+  title: "Harsh Gandhi - Software Engineer Portfolio",
   description: "Personal portfolio website showcasing my projects and skills as a developer",
   icons: "/favicon.ico"
 }
@@ -25,7 +25,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-
-import './globals.css'

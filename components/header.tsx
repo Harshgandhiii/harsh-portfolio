@@ -49,7 +49,7 @@ export function Header() {
             >
               <Link
                 href={`#${item.toLowerCase()}`}
-                className="text-muted-foreground hover:text-foreground transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors"
               >
                 {item}
               </Link>

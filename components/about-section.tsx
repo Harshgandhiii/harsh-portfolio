@@ -46,9 +46,13 @@ export function AboutSection() {
               <div className="pt-4">
                 <m.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <Button asChild variant="outline" className="gap-2 border-primary">
-                    <a href="/Harsh_Gandhi_Resume.docx" download>
+                    <a
+                      href="/Harsh_Gandhi_Resume.docx"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <FileText className="h-4 w-4" />
-                      Download Resume
+                      View Resume
                     </a>
                   </Button>
                 </m.div>

@@ -142,6 +142,10 @@ export function SkillsSection() {
           name: "PayPal",
           icon: "/assets/payment/paypal.svg",
         },
+        {
+          name: "Thawani Pay",
+          icon: "/assets/payment/thawani.webp",
+        },
       ],
     },
     {
